@@ -1,22 +1,10 @@
+body
+{
+    background-color: aliceblue;
+}
 .header
 {
-   height: 30%;
-   background-color: beige;
-}
-.nav
-{
-    height: 10%;
-    background-color: blanchedalmond;
-}
-.main
-{
-    height: 70%;
-    background-color: rgb(240, 218, 185);
-}
-.footer
-{
-    height: 25%;
-    background-color: rgb(247, 209, 153);
+   height: 10%;
 }
 .izq
 {
