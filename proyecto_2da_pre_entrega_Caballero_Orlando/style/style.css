@@ -2,18 +2,9 @@ body
 {
     background-color: aliceblue;
 }
-.header
-{
-   height: 10%;
-}
-.izq
-{
-   background-color: beige; 
-   height: 100%;
-}
+
 .logo
 {
-    height: 100%;
-    width: 90%;
-
+    height: 10%;
+    width: 10%;
 }
