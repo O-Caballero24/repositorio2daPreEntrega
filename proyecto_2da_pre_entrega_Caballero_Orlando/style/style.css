@@ -19,5 +19,12 @@ body
 }
 .carousel-inner
 {
-    max-height: 450px;
+    max-height: 400px;
+}
+@media (max-widht: 768px)
+{
+    #intro
+    {
+        width:90% !important;
+    }
 }
