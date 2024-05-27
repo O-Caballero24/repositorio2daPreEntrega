@@ -104,6 +104,17 @@ body
 #contacto
 {
     background-color: #1b2a4e;
-    min-height: 500px;
+    min-height: 600px;
     position: relative;
+    color: #f3f3f3;
+}
+#contenedor-formulario
+{
+    position:absolute;
+    top: 42%;
+    left: 75%;
+    transform: translate(-100%, -50%);
+    border-radius: 5px;
+    max-width: 800px;
+
 }
