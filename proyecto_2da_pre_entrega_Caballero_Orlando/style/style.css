@@ -1,6 +1,6 @@
 body {
     background-color: aliceblue;
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
 
@@ -21,7 +21,7 @@ body {
     max-height: 400px;
 }
 
-@media(max-widht: 768px) {
+@media (max-width: 768px) {
     #intro {
         width: 90% !important;
     }
@@ -32,7 +32,7 @@ body {
     }
 }
 
-@media(max-width: 576px) {
+@media (max-width: 576px) {
     .icono-wrap {
         flex-wrap: wrap;
         justify-content: center !important;
@@ -40,14 +40,14 @@ body {
 }
 
 .mapa {
-    background: url(../imagenes/logo/mapa.png);
+    background: url('../imagenes/logo/mapa.png');
     width: 100%;
     height: 350px;
 }
 
 #local {
     background: #f3f3f3;
-    padding-bottom: 300px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
 }
@@ -58,7 +58,7 @@ body {
     padding-top: 150px;
 }
 
-@media(max-width:1200px) {
+@media (max-width: 1200px) {
     #local {
         flex-wrap: wrap;
         padding-top: 30px;
@@ -71,7 +71,7 @@ body {
     padding-top: 50px;
 }
 
-#numero-local div {
+#numeros-local div {
     padding: 0 20px 0 0;
     height: 48px;
 }
@@ -80,11 +80,11 @@ body {
     border-right: 2px solid #3f3f3f;
 }
 
-#numero-local div:not(:first-child) {
+#numeros-local div:not(:first-child) {
     padding-left: 20px;
 }
 
-#numero-local p {
+#numeros-local p {
     margin: 0;
 }
 
@@ -94,8 +94,8 @@ body {
     position: relative;
     color: #f3f3f3;
 }
-.card-img-top 
-{
+
+.card-img-top {
     width: 100%;
     height: 200px;
     object-fit: cover;
