@@ -1,27 +1,116 @@
-body {
+body 
+{
     background-color: aliceblue;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
 
-.logo {
+.logo 
+{
     height: 15%;
     width: 15%;
 }
-
-#menu li>a {
+.logo {
+    transition: transform 0.3s ease-in-out; /* Agrega una transición para suavizar el cambio */
+  }
+  
+  .logo:hover {
+    transform: scale(1.1); /* Hace que el logo se agrande ligeramente al pasar el cursor */
+  }
+  
+#menu li>a 
+{
     font-size: 20px;
 }
 
-#menu form>button {
+#menu form>button 
+{
     font-size: 18px;
 }
 
-.carousel-inner {
+/* Animación de cambio de color al pasar el cursor */
+.navbar-nav .nav-link {
+    transition: color 0.3s;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #007bff; /* Cambia el color al pasar el cursor */
+  }
+  
+  /* Animación de desplazamiento suave al hacer clic en un enlace */
+  .navbar-nav .nav-link {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Animación de desplazamiento al abrir/cerrar el menú de navegación en dispositivos móviles */
+  .navbar-collapse {
+    transition: max-height 0.3s ease-in-out;
+  }
+/* Animación para los elementos del menú de navegación */
+.navbar-nav .nav-item .nav-link {
+    transition: color 0.3s ease-in-out; /* Transición suave para el cambio de color */
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #f0bc11; /* Cambia el color al pasar el cursor sobre los enlaces */
+  }
+  
+  /* Animación para el párrafo de contacto */
+  .bg-primary p {
+    transition: color 0.3s ease-in-out; /* Transición suave para el cambio de color */
+  }
+  
+  .bg-primary p:hover {
+    color: #f0bc11; /* Cambia el color al pasar el cursor sobre el párrafo */
+  }
+    
+
+.carousel-inner 
+{
     max-height: 400px;
 }
 
-@media (max-width: 768px) {
+/* Estilos para el título */
+h1 {
+    position: relative; /* Posición relativa para permitir la superposición de elementos */
+    padding: 10px; /* Espacio alrededor del texto */
+  }
+  
+  h1 span {
+    display: inline-block; /* Permite aplicar bordes alrededor del texto */
+    border: 2px solid transparent; /* Borde transparente inicial */
+    transition: border-color 0.3s ease-in-out; /* Transición suave para el cambio de color del borde */
+  }
+  
+  h1:hover span {
+    border-color: #1404f7; /* Cambia el color del borde al pasar el cursor sobre el título */
+  }
+  
+  /* Estilos para el párrafo */
+  p {
+    position: relative; /* Posición relativa para permitir la superposición de elementos */
+    padding: 10px; /* Espacio alrededor del texto */
+    margin-top: 20px; /* Espacio entre el título y el párrafo */
+  }
+  
+  p::before {
+    content: ""; /* Crea un pseudo-elemento antes del párrafo */
+    position: absolute; /* Posición absoluta para superponer al párrafo */
+    top: 0; /* Coloca el pseudo-elemento en la parte superior del párrafo */
+    left: 0; /* Coloca el pseudo-elemento en la parte izquierda del párrafo */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    border: 2px solid transparent; /* Borde transparente inicial */
+    transition: border-color 0.3s ease-in-out; /* Transición suave para el cambio de color del borde */
+    z-index: -1; /* Coloca el pseudo-elemento detrás del párrafo */
+  }
+  
+  p:hover::before {
+    border-color: #1404f7; /* Cambia el color del borde al pasar el cursor sobre el párrafo */
+  }
+  
+@media (max-width: 768px) 
+{
     #intro {
         width: 90% !important;
     }
@@ -32,71 +121,150 @@ body {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 576px) 
+{
     .icono-wrap {
         flex-wrap: wrap;
         justify-content: center !important;
     }
 }
 
-.mapa {
+.mapa 
+{
     background: url('../imagenes/logo/mapa.png');
     width: 100%;
     height: 350px;
 }
 
-#local {
+#local 
+{
     background: #f3f3f3;
     padding-bottom: 50px;
     display: flex;
     justify-content: center;
 }
 
-.wrapper {
+.wrapper 
+{
     width: 50%;
     margin-left: 100px;
     padding-top: 150px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) 
+{
     #local {
         flex-wrap: wrap;
         padding-top: 30px;
     }
 }
 
-.wrapper {
+.wrapper 
+{
     width: 90%;
     margin: auto;
     padding-top: 50px;
 }
 
-#numeros-local div {
+#numeros-local div 
+{
     padding: 0 20px 0 0;
     height: 48px;
 }
 
-#numeros-local div:not(:last-child) {
+#numeros-local div:not(:last-child) 
+{
     border-right: 2px solid #3f3f3f;
 }
 
-#numeros-local div:not(:first-child) {
+#numeros-local div:not(:first-child) 
+{
     padding-left: 20px;
 }
 
-#numeros-local p {
+#numeros-local p 
+{
     margin: 0;
 }
 
-#contacto {
+#contacto 
+{
     background-color: #1b2a4e;
     min-height: 600px;
     position: relative;
     color: #f3f3f3;
 }
 
-.card-img-top {
+.card-img-top 
+{
     width: 100%;
     height: 200px;
     object-fit: cover;
+}
+/* Estilos para los botones de pago */
+.icono-wrap {
+    position: relative; /* Posición relativa para permitir superponer elementos */
+    overflow: hidden; /* Oculta el desbordamiento de los elementos hijos */
+  }
+  
+  .icono-wrap:hover::before {
+    content: ""; /* Crea un pseudo-elemento antes del botón */
+    position: absolute; /* Posición absoluta para superponer al botón */
+    top: 0; /* Coloca el pseudo-elemento en la parte superior del botón */
+    left: 0; /* Coloca el pseudo-elemento en la parte izquierda del botón */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    background-color: rgba(0, 17, 255, 0); /* Color de fondo del efecto */
+    transition: background-color 0.3s ease-in-out; /* Transición suave para el cambio de color */
+    z-index: 1; /* Coloca el pseudo-elemento sobre el botón */
+  }
+  
+  .icono-wrap:hover {
+    transform: scale(1.1); /* Escala el botón al pasar el cursor sobre él */
+    transition: transform 0.3s ease-in-out; /* Transición suave para el cambio de escala */
+    z-index: 2; /* Coloca el botón sobre el pseudo-elemento */
+  }
+  
+/* Estilos para el footer */
+footer 
+{
+    padding: 30px 0;
+}
+
+footer h5 
+{
+    color: #333;
+}
+
+footer ul 
+{
+    padding-left: 0;
+    list-style: none;
+}
+
+footer ul li 
+{
+    margin-bottom: 10px;
+}
+
+footer a 
+{
+    color: #555;
+    text-decoration: none;
+}
+
+footer a:hover 
+{
+    color: #007bff;
+}
+
+footer p 
+{
+    margin-bottom: 0;
+}
+
+footer .p-3 
+{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
 }
