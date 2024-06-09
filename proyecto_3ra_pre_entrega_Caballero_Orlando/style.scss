@@ -1,245 +1,505 @@
-body {
+body 
+{
     background-color: aliceblue;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-  }
-  
-  .logo {
-    height: 15%;
-    width: 15%;
-    transition: transform 0.3s ease-in-out;
-  
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-  
-  #menu {
-    li {
-      > a {
-        font-size: 20px;
-      }
-    }
-  
-    form {
-      > button {
-        font-size: 18px;
-      }
-    }
-  }
-  
-  .navbar-nav {
-    .nav-link {
-      transition: color 0.3s, all 0.3s ease-in-out;
-  
-      &:hover {
-        color: #007bff;
-      }
-    }
-  
-    .nav-item {
-      .nav-link {
-        transition: color 0.3s ease-in-out;
-  
-        &:hover {
-          color: #f0bc11;
+
+    .logo 
+    {
+        height: 15%;
+        width: 15%;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover 
+        {
+            transform: scale(1.1);
         }
-      }
     }
-  }
-  
-  .navbar-collapse {
-    transition: max-height 0.3s ease-in-out;
-  }
-  
-  .bg-primary {
-    p {
-      transition: color 0.3s ease-in-out;
-  
-      &:hover {
-        color: #f0bc11;
-      }
+
+    #menu 
+    {
+        li 
+        {
+            >a 
+            {
+                font-size: 20px;
+            }
+        }
+
+        form 
+        {
+            >button 
+            {
+                font-size: 18px;
+            }
+        }
     }
-  }
-  
-  .carousel-inner {
-    max-height: 400px;
-  }
-  
-  h1 {
-    position: relative;
-    padding: 10px;
-  
-    span {
-      display: inline-block;
-      border: 2px solid transparent;
-      transition: border-color 0.3s ease-in-out;
-  
-      &:hover {
-        border-color: #1404f7;
-      }
+
+    .navbar-nav 
+    {
+        .nav-link 
+        {
+            transition: color 0.3s, all 0.3s ease-in-out;
+
+            &:hover 
+            {
+                color: #007bff;
+            }
+        }
+
+        .nav-item 
+        {
+            .nav-link 
+            {
+                transition: color 0.3s ease-in-out;
+
+                &:hover
+                {
+                    color: #f0bc11;
+                }
+            }
+        }
     }
-  }
-  
-  p {
-    position: relative;
-    padding: 10px;
-    margin-top: 20px;
-  
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 2px solid transparent;
-      transition: border-color 0.3s ease-in-out;
-      z-index: -1;
-  
-      &:hover {
-        border-color: #1404f7;
-      }
+
+    .navbar-collapse 
+    {
+        transition: max-height 0.3s ease-in-out;
     }
-  }
-  
-  @media (max-width: 768px) {
-    #intro {
-      width: 90% !important;
+
+    .bg-primary 
+    {
+        p 
+        {
+            transition: color 0.3s ease-in-out;
+
+            &:hover 
+            {
+                color: #f0bc11;
+            }
+        }
     }
-  
-    .servicio-fila {
-      width: 100% !important;
-      text-align: center;
+
+    .carousel-inner 
+    {
+        max-height: 400px;
     }
-  }
-  
-  @media (max-width: 576px) {
-    .icono-wrap {
-      flex-wrap: wrap;
-      justify-content: center !important;
+
+    h1 
+    {
+        position: relative;
+        padding: 10px;
+
+        span 
+        {
+            display: inline-block;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease-in-out;
+
+            &:hover 
+            {
+                border-color: #1404f7;
+            }
+        }
     }
-  }
-  
-  .mapa {
-    background: url('../imagenes/logo/mapa.png');
-    width: 100%;
-    height: 350px;
-  }
-  
-  #local {
+
+    p 
+    {
+        position: relative;
+        padding: 10px;
+        margin-top: 20px;
+
+        &::before 
+        {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease-in-out;
+            z-index: -1;
+
+            &:hover 
+            {
+                border-color: #1404f7;
+            }
+        }
+    }
+
+    @media (max-width: 768px) 
+    {
+        #intro 
+        {
+            width: 90% !important;
+        }
+
+        .servicio-fila 
+        {
+            width: 100% !important;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 576px) 
+    {
+        .icono-wrap 
+        {
+            flex-wrap: wrap;
+            justify-content: center !important;
+        }
+    }
+}
+
+#local 
+{
     background: #f3f3f3;
     padding-bottom: 50px;
     display: flex;
     justify-content: center;
-  }
-  
-  .wrapper {
+}
+
+.wrapper 
+{
     width: 50%;
     margin-left: 100px;
     padding-top: 150px;
-  
-    @media (max-width: 1200px) {
-      #local {
-        flex-wrap: wrap;
-        padding-top: 30px;
-      }
+
+    @media (max-width: 1200px) 
+    {
+        #local 
+        {
+            flex-wrap: wrap;
+            padding-top: 30px;
+        }
     }
-  
-    @media (max-width: 576px) {
-      width: 90%;
-      margin: auto;
-      padding-top: 50px;
+
+    @media (max-width: 576px) 
+    {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
     }
-  }
-  
-  #numeros-local {
-    div {
-      padding: 0 20px 0 0;
-      height: 48px;
-  
-      &:not(:last-child) {
-        border-right: 2px solid #3f3f3f;
-      }
-  
-      &:not(:first-child) {
-        padding-left: 20px;
-      }
+}
+
+#numeros-local 
+{
+    div 
+    {
+        padding: 0 20px 0 0;
+        height: 48px;
+
+        &:not(:last-child) 
+        {
+            border-right: 2px solid #3f3f3f;
+        }
+
+        &:not(:first-child) 
+        {
+            padding-left: 20px;
+        }
     }
-  
-    p {
-      margin: 0;
+
+    p 
+    {
+        margin: 0;
     }
-  }
-  
-  #contacto {
+}
+
+
+#contacto 
+{
     background-color: #1b2a4e;
     min-height: 600px;
     position: relative;
     color: #f3f3f3;
-  }
-  
-  .card-img-top {
+}
+
+.card-img-top 
+{
     width: 100%;
     height: 200px;
     object-fit: cover;
-  }
-  
-  .icono-wrap {
+}
+
+.icono-wrap 
+{
     position: relative;
     overflow: hidden;
-  
-    &:hover::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 17, 255, 0);
-      transition: background-color 0.3s ease-in-out;
-      z-index: 1;
+
+    &:hover::before 
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 17, 255, 0);
+        transition: background-color 0.3s ease-in-out;
+        z-index: 1;
     }
-  
-    &:hover {
-      transform: scale(1.1);
-      transition: transform 0.3s ease-in-out;
-      z-index: 2;
+
+    &:hover 
+    {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+        z-index: 2;
     }
-  }
-  
-  footer {
+}
+
+#local 
+{
+    .container 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .column 
+        {
+            flex: 1;
+            min-width: 500px; // Ajusta este valor según sea necesario
+            padding: 30px;
+
+            .mapa 
+            {
+                img 
+                {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .wrapper 
+    {
+        padding: 5px;
+    }
+
+    .d-flex 
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+footer 
+{
     padding: 30px 0;
-  
-    h5 {
-      color: #333;
+
+    h5 
+    {
+        color: #333;
     }
-  
-    ul {
-      padding-left: 0;
-      list-style: none;
-  
-      li {
-        margin-bottom: 10px;
-      }
+
+    ul 
+    {
+        padding-left: 0;
+        list-style: none;
+
+        li 
+        {
+            margin-bottom: 10px;
+        }
     }
-  
-    a {
-      color: #555;
-      text-decoration: none;
-  
-      &:hover {
+
+    a 
+    {
+        color: #555;
+        text-decoration: none;
+
+        &:hover 
+        {
+            color: #007bff;
+        }
+    }
+
+    p 
+    {
+        margin-bottom: 0;
+    }
+
+    .p-3 
+    {
+        background-color: rgba(0, 0, 0, 0.2);
+        color: #fff;
+    }
+}
+
+@keyframes zenon-glow 
+{
+    0% 
+    {
+        box-shadow: 0 0 10px rgba(0, 0, 255, 0.5), 0 0 10px rgba(255, 165, 0, 0.5);
+    }
+
+    50% 
+    {
+        box-shadow: 0 0 20px rgba(0, 0, 255, 0.7), 0 0 20px rgba(255, 165, 0, 0.7);
+    }
+
+    100% 
+    {
+        box-shadow: 0 0 10px rgba(0, 0, 255, 0.5), 0 0 10px rgba(255, 165, 0, 0.5);
+    }
+}
+
+@keyframes zenon-glow-hover 
+{
+    0% 
+    {
+        box-shadow: 0 0 20px rgba(255, 165, 0, 0.7), 0 0 20px rgba(0, 0, 255, 0.7);
+    }
+
+    50% 
+    {
+        box-shadow: 0 0 30px rgba(255, 165, 0, 1), 0 0 30px rgba(0, 0, 255, 1);
+    }
+
+    100%
+    {
+        box-shadow: 0 0 20px rgba(255, 165, 0, 0.7), 0 0 20px rgba(0, 0, 255, 0.7);
+    }
+}
+
+main.container 
+{
+    margin-top: 5rem;
+
+    h1.text-center 
+    {
+        margin-bottom: 4rem;
         color: #007bff;
-      }
+        animation: zenon-glow 2s infinite;
+
+        &:hover 
+        {
+            animation: zenon-glow-hover 1s infinite;
+        }
     }
-  
-    p {
-      margin-bottom: 0;
+
+    .row 
+    {
+        .col 
+        {
+            .card 
+            {
+                height: 100%;
+                transition: box-shadow 0.3s ease-in-out;
+                animation: zenon-glow 2s infinite;
+
+                &:hover 
+                {
+                    animation: zenon-glow-hover 1s infinite;
+                }
+
+                .card-img-top 
+                {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                    animation: zenon-glow 2s infinite;
+
+                    &:hover 
+                    {
+                        animation: zenon-glow-hover 1s infinite;
+                    }
+                }
+
+                .card-body 
+                {
+                    .card-title 
+                    {
+                        animation: zenon-glow 2s infinite;
+
+                        &:hover
+                        {
+                            animation: zenon-glow-hover 1s infinite;
+                        }
+                    }
+
+                    .card-text 
+                    {
+                        animation: zenon-glow 2s infinite;
+
+                        &:hover 
+                        {
+                            animation: zenon-glow-hover 1s infinite;
+                        }
+                    }
+                }
+            }
+        }
     }
-  
-    .p-3 {
-      background-color: rgba(0, 0, 0, 0.2);
-      color: #fff;
+}
+
+// Definición de la animación
+@keyframes fadeInUp {
+    from 
+    {
+        opacity: 0;
+        transform: translateY(20px);
     }
-  }
-  
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// Aplicación de la animación al elemento principal
+#contacto 
+{
+    animation: fadeInUp 1s ease-out;
+
+    // Anidación para estilos adicionales
+    .container 
+    {
+        padding-top: 20px; 
+    }
+
+    // Estilo del formulario dentro del elemento principal
+    form 
+    {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+        // Estilos para los campos de entrada
+        input[type="text"],
+        input[type="email"],
+        select 
+        {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+
+            &:focus 
+            {
+                outline: none;
+                border-color: #0056b3;    }
+        }
+
+        // Estilos para el botón de enviar
+        .btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0056b3;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #004494;
+            }
+        }
+    }
+}

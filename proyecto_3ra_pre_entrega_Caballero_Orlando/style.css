@@ -3,70 +3,62 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
-
-.logo {
+body .logo {
   height: 15%;
   width: 15%;
   transition: transform 0.3s ease-in-out;
 }
-.logo:hover {
+body .logo:hover {
   transform: scale(1.1);
 }
-
-#menu li > a {
+body #menu li > a {
   font-size: 20px;
 }
-#menu form > button {
+body #menu form > button {
   font-size: 18px;
 }
-
-.navbar-nav .nav-link {
+body .navbar-nav .nav-link {
   transition: color 0.3s, all 0.3s ease-in-out;
 }
-.navbar-nav .nav-link:hover {
+body .navbar-nav .nav-link:hover {
   color: #007bff;
 }
-.navbar-nav .nav-item .nav-link {
+body .navbar-nav .nav-item .nav-link {
   transition: color 0.3s ease-in-out;
 }
-.navbar-nav .nav-item .nav-link:hover {
+body .navbar-nav .nav-item .nav-link:hover {
   color: #f0bc11;
 }
-
-.navbar-collapse {
+body .navbar-collapse {
   transition: max-height 0.3s ease-in-out;
 }
-
-.bg-primary p {
+body .bg-primary p {
   transition: color 0.3s ease-in-out;
 }
-.bg-primary p:hover {
+body .bg-primary p:hover {
   color: #f0bc11;
 }
-
-.carousel-inner {
+body .carousel-inner {
   max-height: 400px;
 }
-
-h1 {
+body h1 {
   position: relative;
   padding: 10px;
 }
-h1 span {
+body h1 span {
   display: inline-block;
   border: 2px solid transparent;
   transition: border-color 0.3s ease-in-out;
 }
-h1 span:hover {
+body h1 span:hover {
   border-color: #1404f7;
 }
-
-p {
+body p {
   position: relative;
   padding: 10px;
   margin-top: 20px;
 }
-p::before {
+body p::before {
   content: "";
   position: absolute;
   top: 0;
@@ -77,29 +69,23 @@ p::before {
   transition: border-color 0.3s ease-in-out;
   z-index: -1;
 }
-p::before:hover {
+body p::before:hover {
   border-color: #1404f7;
 }
-
 @media (max-width: 768px) {
-  #intro {
+  body #intro {
     width: 90% !important;
   }
-  .servicio-fila {
+  body .servicio-fila {
     width: 100% !important;
     text-align: center;
   }
 }
 @media (max-width: 576px) {
-  .icono-wrap {
+  body .icono-wrap {
     flex-wrap: wrap;
     justify-content: center !important;
   }
-}
-.mapa {
-  background: url("../imagenes/logo/mapa.png");
-  width: 100%;
-  height: 350px;
 }
 
 #local {
@@ -160,7 +146,6 @@ p::before:hover {
   overflow: hidden;
 }
 .icono-wrap:hover::before {
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -174,6 +159,28 @@ p::before:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
   z-index: 2;
+}
+
+#local .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#local .container .column {
+  flex: 1;
+  min-width: 500px;
+  padding: 30px;
+}
+#local .container .column .mapa img {
+  max-width: 100%;
+  height: auto;
+}
+#local .wrapper {
+  padding: 5px;
+}
+#local .d-flex {
+  display: flex;
+  justify-content: space-around;
 }
 
 footer {
@@ -202,6 +209,122 @@ footer p {
 footer .p-3 {
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
+}
+
+@keyframes zenon-glow {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5), 0 0 10px rgba(255, 165, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.7), 0 0 20px rgba(255, 165, 0, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5), 0 0 10px rgba(255, 165, 0, 0.5);
+  }
+}
+@keyframes zenon-glow-hover {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.7), 0 0 20px rgba(0, 0, 255, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 30px rgb(255, 165, 0), 0 0 30px rgb(0, 0, 255);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.7), 0 0 20px rgba(0, 0, 255, 0.7);
+  }
+}
+main.container {
+  margin-top: 5rem;
+}
+main.container h1.text-center {
+  margin-bottom: 4rem;
+  color: #007bff;
+  animation: zenon-glow 2s infinite;
+}
+main.container h1.text-center:hover {
+  animation: zenon-glow-hover 1s infinite;
+}
+main.container .row .col .card {
+  height: 100%;
+  transition: box-shadow 0.3s ease-in-out;
+  animation: zenon-glow 2s infinite;
+}
+main.container .row .col .card:hover {
+  animation: zenon-glow-hover 1s infinite;
+}
+main.container .row .col .card .card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  animation: zenon-glow 2s infinite;
+}
+main.container .row .col .card .card-img-top:hover {
+  animation: zenon-glow-hover 1s infinite;
+}
+main.container .row .col .card .card-body .card-title {
+  animation: zenon-glow 2s infinite;
+}
+main.container .row .col .card .card-body .card-title:hover {
+  animation: zenon-glow-hover 1s infinite;
+}
+main.container .row .col .card .card-body .card-text {
+  animation: zenon-glow 2s infinite;
+}
+main.container .row .col .card .card-body .card-text:hover {
+  animation: zenon-glow-hover 1s infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#contacto {
+  animation: fadeInUp 1s ease-out;
+}
+#contacto .container {
+  padding-top: 20px;
+}
+#contacto form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+#contacto form input[type=text],
+#contacto form input[type=email],
+#contacto form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+#contacto form input[type=text]:focus,
+#contacto form input[type=email]:focus,
+#contacto form select:focus {
+  outline: none;
+  border-color: #0056b3;
+}
+#contacto form .btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0056b3;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#contacto form .btn:hover {
+  background-color: #004494;
 }
 
 /*# sourceMappingURL=style.css.map */
