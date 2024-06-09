@@ -21,13 +21,13 @@ body .navbar-nav .nav-link {
   transition: color 0.3s, all 0.3s ease-in-out;
 }
 body .navbar-nav .nav-link:hover {
-  color: #007bff;
+  color: rgb(0, 123, 255);
 }
 body .navbar-nav .nav-item .nav-link {
   transition: color 0.3s ease-in-out;
 }
 body .navbar-nav .nav-item .nav-link:hover {
-  color: #f0bc11;
+  color: rgb(240, 188, 17);
 }
 body .navbar-collapse {
   transition: max-height 0.3s ease-in-out;
@@ -36,7 +36,7 @@ body .bg-primary p {
   transition: color 0.3s ease-in-out;
 }
 body .bg-primary p:hover {
-  color: #f0bc11;
+  color: rgb(240, 188, 17);
 }
 body .carousel-inner {
   max-height: 400px;
@@ -51,7 +51,7 @@ body h1 span {
   transition: border-color 0.3s ease-in-out;
 }
 body h1 span:hover {
-  border-color: #1404f7;
+  border-color: rgb(0, 123, 255);
 }
 body p {
   position: relative;
@@ -70,7 +70,7 @@ body p::before {
   z-index: -1;
 }
 body p::before:hover {
-  border-color: #1404f7;
+  border-color: rgb(0, 123, 255);
 }
 @media (max-width: 768px) {
   body #intro {
@@ -201,7 +201,7 @@ footer a {
   text-decoration: none;
 }
 footer a:hover {
-  color: #007bff;
+  color: rgb(0, 123, 255);
 }
 footer p {
   margin-bottom: 0;
@@ -238,7 +238,7 @@ main.container {
 }
 main.container h1.text-center {
   margin-bottom: 4rem;
-  color: #007bff;
+  color: rgb(0, 123, 255);
   animation: zenon-glow 2s infinite;
 }
 main.container h1.text-center:hover {

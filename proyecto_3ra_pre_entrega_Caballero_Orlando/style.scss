@@ -1,3 +1,9 @@
+$colorPrincipal: rgb(0, 123, 255);
+$colorSecundario: rgb(240, 188, 17);
+
+
+
+
 body 
 {
     background-color: aliceblue;
@@ -43,7 +49,7 @@ body
 
             &:hover 
             {
-                color: #007bff;
+                color: $colorPrincipal;
             }
         }
 
@@ -55,7 +61,7 @@ body
 
                 &:hover
                 {
-                    color: #f0bc11;
+                    color: $colorSecundario;
                 }
             }
         }
@@ -74,7 +80,7 @@ body
 
             &:hover 
             {
-                color: #f0bc11;
+                color: $colorSecundario;
             }
         }
     }
@@ -97,7 +103,7 @@ body
 
             &:hover 
             {
-                border-color: #1404f7;
+                border-color: $colorPrincipal;
             }
         }
     }
@@ -122,7 +128,7 @@ body
 
             &:hover 
             {
-                border-color: #1404f7;
+                border-color: $colorPrincipal;
             }
         }
     }
@@ -311,7 +317,7 @@ footer
 
         &:hover 
         {
-            color: #007bff;
+            color: $colorPrincipal;
         }
     }
 
@@ -370,7 +376,7 @@ main.container
     h1.text-center 
     {
         margin-bottom: 4rem;
-        color: #007bff;
+        color: $colorPrincipal;
         animation: zenon-glow 2s infinite;
 
         &:hover 
