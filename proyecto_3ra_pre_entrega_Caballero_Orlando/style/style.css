@@ -11,11 +11,11 @@ body
     width: 15%;
 }
 .logo {
-    transition: transform 0.3s ease-in-out; /* Agrega una transición para suavizar el cambio */
+    transition: transform 0.3s ease-in-out;
   }
   
   .logo:hover {
-    transform: scale(1.1); /* Hace que el logo se agrande ligeramente al pasar el cursor */
+    transform: scale(1.1); 
   }
   
 #menu li>a 
@@ -34,7 +34,7 @@ body
   }
   
   .navbar-nav .nav-link:hover {
-    color: #007bff; /* Cambia el color al pasar el cursor */
+    color: #007bff; 
   }
   
   /* Animación de desplazamiento suave al hacer clic en un enlace */
@@ -48,20 +48,20 @@ body
   }
 /* Animación para los elementos del menú de navegación */
 .navbar-nav .nav-item .nav-link {
-    transition: color 0.3s ease-in-out; /* Transición suave para el cambio de color */
+    transition: color 0.3s ease-in-out; 
   }
   
   .navbar-nav .nav-item .nav-link:hover {
-    color: #f0bc11; /* Cambia el color al pasar el cursor sobre los enlaces */
+    color: #f0bc11; 
   }
   
   /* Animación para el párrafo de contacto */
   .bg-primary p {
-    transition: color 0.3s ease-in-out; /* Transición suave para el cambio de color */
+    transition: color 0.3s ease-in-out; /
   }
   
   .bg-primary p:hover {
-    color: #f0bc11; /* Cambia el color al pasar el cursor sobre el párrafo */
+    color: #f0bc11; 
   }
     
 
@@ -72,41 +72,41 @@ body
 
 /* Estilos para el título */
 h1 {
-    position: relative; /* Posición relativa para permitir la superposición de elementos */
-    padding: 10px; /* Espacio alrededor del texto */
+    position: relative; 
+    padding: 10px; 
   }
   
   h1 span {
-    display: inline-block; /* Permite aplicar bordes alrededor del texto */
-    border: 2px solid transparent; /* Borde transparente inicial */
-    transition: border-color 0.3s ease-in-out; /* Transición suave para el cambio de color del borde */
+    display: inline-block; 
+    border: 2px solid transparent; 
+    transition: border-color 0.3s ease-in-out; 
   }
   
   h1:hover span {
-    border-color: #1404f7; /* Cambia el color del borde al pasar el cursor sobre el título */
+    border-color: #1404f7; 
   }
   
   /* Estilos para el párrafo */
   p {
-    position: relative; /* Posición relativa para permitir la superposición de elementos */
-    padding: 10px; /* Espacio alrededor del texto */
-    margin-top: 20px; /* Espacio entre el título y el párrafo */
+    position: relative; 
+    padding: 10px; 
+    margin-top: 20px; 
   }
   
   p::before {
-    content: ""; /* Crea un pseudo-elemento antes del párrafo */
-    position: absolute; /* Posición absoluta para superponer al párrafo */
-    top: 0; /* Coloca el pseudo-elemento en la parte superior del párrafo */
-    left: 0; /* Coloca el pseudo-elemento en la parte izquierda del párrafo */
-    width: 100%; /* Ancho completo */
-    height: 100%; /* Altura completa */
-    border: 2px solid transparent; /* Borde transparente inicial */
-    transition: border-color 0.3s ease-in-out; /* Transición suave para el cambio de color del borde */
-    z-index: -1; /* Coloca el pseudo-elemento detrás del párrafo */
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    border: 2px solid transparent; 
+    transition: border-color 0.3s ease-in-out; 
+    z-index: -1; 
   }
   
   p:hover::before {
-    border-color: #1404f7; /* Cambia el color del borde al pasar el cursor sobre el párrafo */
+    border-color: #1404f7; 
   }
   
 @media (max-width: 768px) 
@@ -203,26 +203,26 @@ h1 {
 }
 /* Estilos para los botones de pago */
 .icono-wrap {
-    position: relative; /* Posición relativa para permitir superponer elementos */
-    overflow: hidden; /* Oculta el desbordamiento de los elementos hijos */
+    position: relative; 
+    overflow: hidden; 
   }
   
   .icono-wrap:hover::before {
-    content: ""; /* Crea un pseudo-elemento antes del botón */
-    position: absolute; /* Posición absoluta para superponer al botón */
-    top: 0; /* Coloca el pseudo-elemento en la parte superior del botón */
-    left: 0; /* Coloca el pseudo-elemento en la parte izquierda del botón */
-    width: 100%; /* Ancho completo */
-    height: 100%; /* Altura completa */
-    background-color: rgba(0, 17, 255, 0); /* Color de fondo del efecto */
-    transition: background-color 0.3s ease-in-out; /* Transición suave para el cambio de color */
-    z-index: 1; /* Coloca el pseudo-elemento sobre el botón */
+    content: ""; 
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 17, 255, 0); 
+    transition: background-color 0.3s ease-in-out; 
+    z-index: 1; 
   }
   
   .icono-wrap:hover {
-    transform: scale(1.1); /* Escala el botón al pasar el cursor sobre él */
-    transition: transform 0.3s ease-in-out; /* Transición suave para el cambio de escala */
-    z-index: 2; /* Coloca el botón sobre el pseudo-elemento */
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out; 
+    z-index: 2; 
   }
   
 /* Estilos para el footer */
